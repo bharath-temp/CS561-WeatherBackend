@@ -26,10 +26,12 @@ app.post('/v1/auth', (req, res) => {
 
     const user = users.find(u => { return u.username === username &&
                                           u.password === password});
+
     if (user) {
         const accessToken = jwt.sign({username: user.username},
                                       accessTokenSecret,
                                       {expiresIn: '20m'});
+
         var currDate = new Date();
         currDate.setMinutes(currDate.getMinutes() + 20);
         const expires = currDate.toJSON();
