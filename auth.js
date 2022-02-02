@@ -1,11 +1,17 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const jwt = require('jsonwebtoken');
 const bodyParser = require('body-parser');
 const request = require('request')
 const http = require('http')
 
-app.use(bodyParser.json());
+const corsOptions = {
+    origin: 'http://localhost:3001',
+    optionsSuccessStatus: 200
+}
+
+app.use(bodyParser.json(), cors(corsOptions));
 
 const accessTokenSecret = 'supersecretaccesstoken';
 
