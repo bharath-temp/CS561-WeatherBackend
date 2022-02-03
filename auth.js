@@ -58,7 +58,7 @@ app.get('/v1/weather', authenticateJWT, (req, res) => {
 
 app.get('/v1/hello', authenticateJWT, (req, res) => {
     const greeting = "Howdy Partner";
-    res.json(greeting);
+    res.json({greeting});
 });
 
 app.post('/v1/auth', (req, res) => {
