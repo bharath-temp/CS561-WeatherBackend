@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vendia/serverless-express": "^4.5.4",
+    "aws-serverless-express": "^3.4.0",
     "body-parser": "^1.19.1",
+    "claudia": "^5.14.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "jsonwebtoken": "^8.5.1",
