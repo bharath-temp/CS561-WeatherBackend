@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "assn5-executor",
+    "name": "assn5",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "ypq2x7y3n7"
+  }
+}
